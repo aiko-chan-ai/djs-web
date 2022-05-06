@@ -10,12 +10,12 @@ import { Documentation, DocumentationCustomFile } from './interfaces/Documentati
 import { fetchError } from './util/fetchError';
 import { SearchTerm, DocumentType, DocumentLink } from './util/search';
 import { splitName } from './util/splitName';
-import BuildersSource from '~/data/BuildersSource';
-import CollectionSource from '~/data/CollectionSource';
+// import BuildersSource from '~/data/BuildersSource';
+// import CollectionSource from '~/data/CollectionSource';
 // import CommandoSource from '~/data/CommandoSource';
-import RESTSource from '~/data/RESTSource';
-import RPCSource from '~/data/RPCSource';
-import VoiceSource from '~/data/VoiceSource';
+// import RESTSource from '~/data/RESTSource';
+// import RPCSource from '~/data/RPCSource';
+// import VoiceSource from '~/data/VoiceSource';
 
 export interface State {
 	sources: { source: DocsSource; name: string; id: string }[];
@@ -39,12 +39,12 @@ export const store = createStore<State>({
 	state: {
 		sources: [
 			{ source: MainSource, name: MainSource.name, id: MainSource.id },
-			{ source: CollectionSource, name: CollectionSource.name, id: CollectionSource.id },
-			{ source: BuildersSource, name: BuildersSource.name, id: BuildersSource.id },
-			{ source: VoiceSource, name: VoiceSource.name, id: VoiceSource.id },
-			{ source: RESTSource, name: RESTSource.name, id: RESTSource.id },
+			// { source: CollectionSource, name: CollectionSource.name, id: CollectionSource.id },
+			// { source: BuildersSource, name: BuildersSource.name, id: BuildersSource.id },
+			// { source: VoiceSource, name: VoiceSource.name, id: VoiceSource.id },
+			// { source: RESTSource, name: RESTSource.name, id: RESTSource.id },
 			// { source: CommandoSource, name: CommandoSource.name, id: CommandoSource.id },
-			{ source: RPCSource, name: RPCSource.name, id: RPCSource.id },
+			// { source: RPCSource, name: RPCSource.name, id: RPCSource.id },
 		],
 		source: MainSource,
 		tag: MainSource.defaultTag,
@@ -97,9 +97,9 @@ export const store = createStore<State>({
 
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			const [fetchedDownloads, fetchedStars, fetchedContributors] = await Promise.all([
-				fetch('https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/discord.js').then(toJSON, noop),
-				fetch('https://api.github.com/repos/discordjs/discord.js').then(toJSON, noop),
-				fetch('https://api.github.com/repos/discordjs/discord.js/stats/contributors').then(toJSON, noop),
+				fetch('https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/discord.js-selfbot-v13').then(toJSON, noop),
+				fetch('https://api.github.com/repos/aiko-chan-ai/discord.js-selfbot-v13').then(toJSON, noop),
+				fetch('https://api.github.com/repos/aiko-chan-ai/discord.js-selfbot-v13/stats/contributors').then(toJSON, noop),
 			]);
 
 			if (fetchedDownloads?.downloads) {

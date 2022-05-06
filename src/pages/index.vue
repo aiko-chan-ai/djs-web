@@ -11,9 +11,9 @@
 	>
 		<div class="col-span-full">
 			<h2>About</h2>
-			<h3>Imagine a bot</h3>
+			<h3>Imagine a selfbot</h3>
 			<p>
-				discord.js is a powerful
+				Discord.js Selfbot v13 is a powerful
 				<a href="https://nodejs.org" target="_blank" rel="noopener"
 					>Node.js <heroicons-outline-external-link class="h-5 w-5 inline-block mb-1" aria-hidden="true"
 				/></a>

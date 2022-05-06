@@ -44,7 +44,7 @@ const html = computed(() => {
 });
 
 useHead({
-	title: computed(() => `discord.js | ${file.value?.name ?? ''}`),
+	title: computed(() => `Discord.js Selfbot v13 | ${file.value?.name ?? ''}`),
 });
 
 onMounted(() => {

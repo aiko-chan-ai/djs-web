@@ -7,7 +7,7 @@ export default new DocsSource({
 	id: 'builders',
 	name: 'Builders',
 	global: 'Builders',
-	docsRepo: 'discordjs/docs',
+	docsRepo: 'aiko-chan-ai/docs',
 	repo: 'discordjs/discord.js',
 	defaultTag: 'stable',
 	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),

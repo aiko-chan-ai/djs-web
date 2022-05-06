@@ -75,7 +75,7 @@ const typedef = docs.value?.typedefs.find((typedef) => typedef.name === route.pa
 const description = computed(() => markdown(convertLinks(typedef?.description, docs.value, router, route)));
 
 useHead({
-	title: computed(() => `discord.js | ${typedef?.name ?? ''}`),
+	title: computed(() => `Discord.js Selfbot v13 | ${typedef?.name ?? ''}`),
 });
 
 onMounted(() => {

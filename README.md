@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://discordjs-self-v13.cf"><img src="https://www.discordjs-self-v13.cf/static/logo.svg" width="546" alt="discord.js" /></a>
+    <a href="https://discordjs-self-v13.netlify.app"><img src="https://discordjs-self-v13.netlify.app/static/logo.svg" width="546" alt="discord.js-selfbot" /></a>
   </p>
   <br />
   <p>
